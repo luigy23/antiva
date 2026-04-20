@@ -12,6 +12,7 @@
 		A1B2C3D400000016 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000012 /* TaskModel.swift */; };
 		A1B2C3D400000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000013 /* Assets.xcassets */; };
 		A1B2C3D40000001A /* DesktopWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000019 /* DesktopWidget.swift */; };
+		A1B2C3D40000001C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000001B /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A1B2C3D400000013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B2C3D400000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B2C3D400000019 /* DesktopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopWidget.swift; sourceTree = "<group>"; };
+		A1B2C3D40000001B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 				A1B2C3D400000011 /* ContentView.swift */,
 				A1B2C3D400000012 /* TaskModel.swift */,
 				A1B2C3D400000019 /* DesktopWidget.swift */,
+				A1B2C3D40000001B /* OnboardingView.swift */,
 				A1B2C3D400000013 /* Assets.xcassets */,
 				A1B2C3D400000018 /* Info.plist */,
 			);
@@ -132,6 +135,7 @@
 				A1B2C3D400000015 /* ContentView.swift in Sources */,
 				A1B2C3D400000016 /* TaskModel.swift in Sources */,
 				A1B2C3D40000001A /* DesktopWidget.swift in Sources */,
+				A1B2C3D40000001C /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

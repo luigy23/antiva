@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var store: TaskStore
     @ObservedObject var widgetController: DesktopWidgetController
+    @ObservedObject var onboardingController: OnboardingController
     @State private var newTaskTitle = ""
     @State private var isHoveringClearAll = false
 
@@ -151,6 +152,15 @@ struct ContentView: View {
                 }
 
                 Spacer()
+
+                Button {
+                    onboardingController.show()
+                } label: {
+                    Image(systemName: "questionmark.circle")
+                        .font(.system(size: 12))
+                        .foregroundStyle(.secondary)
+                }
+                .buttonStyle(.plain)
 
                 Button {
                     NSApplication.shared.terminate(nil)
