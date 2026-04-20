@@ -1,0 +1,22 @@
+/* Menu bar */
+"pending_count_%d" = "%d pendientes";
+"add_task_placeholder" = "Agregar tarea...";
+"no_tasks" = "Sin tareas por ahora";
+"completed_section" = "Completadas";
+"clear" = "Limpiar";
+"clear_all" = "Borrar todo";
+"quit" = "Salir";
+
+/* Onboarding */
+"onboarding_step1_title" = "Antiva vive en tu barra de menú";
+"onboarding_step1_desc" = "Busca el icono de lista arriba a la derecha de tu pantalla. Haz click para abrir tu lista de tareas.";
+"onboarding_step2_title" = "Agrega tareas al instante";
+"onboarding_step2_desc" = "Escribe tu tarea y presiona Enter. Así de simple. Haz click en el círculo para completarla.";
+"onboarding_step3_title" = "Activa el widget de escritorio";
+"onboarding_step3_desc" = "Desde el menú, activa el Widget para tener tus tareas siempre visibles en tu escritorio. Arrástralo donde quieras.";
+"next" = "Siguiente";
+"get_started" = "Empezar";
+"skip" = "Saltar";
+
+/* Widget */
+"all_done" = "Todo al día!";

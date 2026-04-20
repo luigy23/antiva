@@ -125,7 +125,7 @@ struct DesktopWidgetView: View {
                     Image(systemName: "checkmark.circle")
                         .font(.system(size: 24))
                         .foregroundStyle(.green)
-                    Text("Todo al dia!")
+                    Text(String(localized: "all_done"))
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
                 }

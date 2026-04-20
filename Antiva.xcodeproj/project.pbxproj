@@ -24,6 +24,9 @@
 		A1B2C3D400000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B2C3D400000019 /* DesktopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopWidget.swift; sourceTree = "<group>"; };
 		A1B2C3D40000001B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A1B2C3D40000001D /* Antiva.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Antiva.entitlements; sourceTree = "<group>"; };
+		A1B2C3D40000001F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A1B2C3D400000021 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,8 @@
 				A1B2C3D400000012 /* TaskModel.swift */,
 				A1B2C3D400000019 /* DesktopWidget.swift */,
 				A1B2C3D40000001B /* OnboardingView.swift */,
+				A1B2C3D40000001D /* Antiva.entitlements */,
+				A1B2C3D40000001E /* Localizable.strings */,
 				A1B2C3D400000013 /* Assets.xcassets */,
 				A1B2C3D400000018 /* Info.plist */,
 			);
@@ -104,6 +109,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = A1B2C3D400000002;
 			productRefGroup = A1B2C3D400000004 /* Products */;
@@ -121,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B2C3D400000017 /* Assets.xcassets in Resources */,
+				A1B2C3D400000020 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1B2C3D40000001E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B2C3D40000001F /* en */,
+				A1B2C3D400000021 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A1B2C3D400000006 /* Debug */ = {
@@ -196,19 +215,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Antiva/Antiva.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TGXQSFKNH;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Antiva/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026 Luigy Leonardo";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026 Skillion Studios";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.luigy.antiva;
+				PRODUCT_BUNDLE_IDENTIFIER = app.skillion.antiva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
@@ -219,19 +241,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Antiva/Antiva.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8TGXQSFKNH;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Antiva/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026 Luigy Leonardo";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026 Skillion Studios";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.luigy.antiva;
+				PRODUCT_BUNDLE_IDENTIFIER = app.skillion.antiva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;

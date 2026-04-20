@@ -20,7 +20,7 @@ struct ContentView: View {
                 Spacer()
 
                 if !store.tasks.isEmpty {
-                    Text("\(pending.count) pendiente\(pending.count == 1 ? "" : "s")")
+                    Text(String(format: String(localized: "pending_count_%d"), pending.count))
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
                 }
@@ -31,7 +31,7 @@ struct ContentView: View {
 
             // Add task
             HStack(spacing: 10) {
-                TextField("Agregar tarea...", text: $newTaskTitle)
+                TextField(String(localized: "add_task_placeholder"), text: $newTaskTitle)
                     .textFieldStyle(.plain)
                     .font(.system(size: 14))
                     .padding(10)
@@ -59,7 +59,7 @@ struct ContentView: View {
                     Image(systemName: "tray")
                         .font(.system(size: 32))
                         .foregroundStyle(.quaternary)
-                    Text("Sin tareas por ahora")
+                    Text(String(localized: "no_tasks"))
                         .font(.system(size: 14))
                         .foregroundStyle(.secondary)
                 }
@@ -82,14 +82,14 @@ struct ContentView: View {
 
                         if !completed.isEmpty {
                             HStack {
-                                Text("Completadas")
+                                Text(String(localized: "completed_section"))
                                     .font(.system(size: 11, weight: .semibold))
                                     .foregroundStyle(.secondary)
                                     .textCase(.uppercase)
 
                                 Spacer()
 
-                                Button("Limpiar") {
+                                Button(String(localized: "clear")) {
                                     withAnimation(.easeInOut(duration: 0.2)) {
                                         store.clearCompleted()
                                     }
@@ -143,7 +143,7 @@ struct ContentView: View {
                     Button {
                         withAnimation { store.clearAll() }
                     } label: {
-                        Text("Borrar todo")
+                        Text(String(localized: "clear_all"))
                             .font(.system(size: 12))
                             .foregroundStyle(isHoveringClearAll ? .red : .secondary)
                     }
@@ -165,7 +165,7 @@ struct ContentView: View {
                 Button {
                     NSApplication.shared.terminate(nil)
                 } label: {
-                    Text("Salir")
+                    Text(String(localized: "quit"))
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
                 }

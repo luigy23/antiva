@@ -4,22 +4,10 @@ struct OnboardingView: View {
     @State private var currentStep = 0
     var onComplete: () -> Void
 
-    private let steps: [(icon: String, title: String, description: String)] = [
-        (
-            "menubar.arrow.up.rectangle",
-            "Antiva vive en tu barra de menú",
-            "Busca el icono de lista arriba a la derecha de tu pantalla. Haz click para abrir tu lista de tareas."
-        ),
-        (
-            "plus.circle",
-            "Agrega tareas al instante",
-            "Escribe tu tarea y presiona Enter. Así de simple. Haz click en el círculo para completarla."
-        ),
-        (
-            "macwindow.on.rectangle",
-            "Activa el widget de escritorio",
-            "Desde el menú, activa el Widget para tener tus tareas siempre visibles en tu escritorio. Arrástralo donde quieras."
-        ),
+    private let steps: [(icon: String, titleKey: String, descKey: String)] = [
+        ("menubar.arrow.up.rectangle", "onboarding_step1_title", "onboarding_step1_desc"),
+        ("plus.circle", "onboarding_step2_title", "onboarding_step2_desc"),
+        ("macwindow.on.rectangle", "onboarding_step3_title", "onboarding_step3_desc"),
     ]
 
     var body: some View {
@@ -36,7 +24,7 @@ struct OnboardingView: View {
                 .transition(.opacity)
 
             // Title
-            Text(steps[currentStep].title)
+            Text(String(localized: String.LocalizationValue(steps[currentStep].titleKey)))
                 .font(.system(size: 20, weight: .bold))
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 10)
@@ -44,7 +32,7 @@ struct OnboardingView: View {
                 .transition(.opacity)
 
             // Description
-            Text(steps[currentStep].description)
+            Text(String(localized: String.LocalizationValue(steps[currentStep].descKey)))
                 .font(.system(size: 14))
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -76,7 +64,9 @@ struct OnboardingView: View {
                     onComplete()
                 }
             } label: {
-                Text(currentStep < steps.count - 1 ? "Siguiente" : "Empezar")
+                Text(currentStep < steps.count - 1
+                     ? String(localized: "next")
+                     : String(localized: "get_started"))
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
@@ -91,7 +81,7 @@ struct OnboardingView: View {
 
             // Skip
             if currentStep < steps.count - 1 {
-                Button("Saltar") {
+                Button(String(localized: "skip")) {
                     onComplete()
                 }
                 .font(.system(size: 12))

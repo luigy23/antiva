@@ -1,0 +1,22 @@
+/* Menu bar */
+"pending_count_%d" = "%d pending";
+"add_task_placeholder" = "Add a task...";
+"no_tasks" = "No tasks yet";
+"completed_section" = "Completed";
+"clear" = "Clear";
+"clear_all" = "Clear all";
+"quit" = "Quit";
+
+/* Onboarding */
+"onboarding_step1_title" = "Antiva lives in your menu bar";
+"onboarding_step1_desc" = "Look for the list icon at the top right of your screen. Click it to open your task list.";
+"onboarding_step2_title" = "Add tasks instantly";
+"onboarding_step2_desc" = "Type your task and press Enter. That's it. Click the circle to mark it as done.";
+"onboarding_step3_title" = "Enable the desktop widget";
+"onboarding_step3_desc" = "From the menu, toggle the Widget to keep your tasks always visible on your desktop. Drag it anywhere you like.";
+"next" = "Next";
+"get_started" = "Get Started";
+"skip" = "Skip";
+
+/* Widget */
+"all_done" = "All done!";
