@@ -24,7 +24,7 @@ struct OnboardingView: View {
                 .transition(.opacity)
 
             // Title
-            Text(String(localized: String.LocalizationValue(steps[currentStep].titleKey)))
+            Text(NSLocalizedString(steps[currentStep].titleKey, comment: ""))
                 .font(.system(size: 20, weight: .bold))
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 10)
@@ -32,7 +32,7 @@ struct OnboardingView: View {
                 .transition(.opacity)
 
             // Description
-            Text(String(localized: String.LocalizationValue(steps[currentStep].descKey)))
+            Text(NSLocalizedString(steps[currentStep].descKey, comment: ""))
                 .font(.system(size: 14))
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)

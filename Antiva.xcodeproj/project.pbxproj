@@ -13,6 +13,7 @@
 		A1B2C3D400000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000013 /* Assets.xcassets */; };
 		A1B2C3D40000001A /* DesktopWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000019 /* DesktopWidget.swift */; };
 		A1B2C3D40000001C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000001B /* OnboardingView.swift */; };
+		A1B2C3D400000020 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D40000001E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -219,7 +220,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TGXQSFKNH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -229,7 +230,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.skillion.antiva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -245,7 +246,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 8TGXQSFKNH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -255,7 +256,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.skillion.antiva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
